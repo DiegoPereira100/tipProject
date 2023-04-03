@@ -7,7 +7,7 @@
 }
 
 :root {
-  --primary-color: lightcoral;
+  --primary-color: rgb(87, 191, 239);
   --secondary-color: DimGrey;
   --tertiary-color: Gainsboro;
 }
@@ -86,4 +86,9 @@ body {
 
 .formSubmit:hover {
   cursor: pointer;
+}
+
+#totalTip {
+  font-size: 18px;
+  text-align: center;
 }

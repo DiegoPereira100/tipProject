@@ -15,17 +15,17 @@
       <h1 class="title">Calculadora de gorgetas</h1>
     </div>
     <div>
-      <form class="tipForms">
+      <form class="tipForms" id="tipForms">
         <label for="bill">
           <p>Quanto ficou a conta?</p>
         </label>
         <p>
-          R$ <input type="number" id="bill" name="bill" placeholder="100" class="inputForm">
+          R$ <input type="number" id="bill" name="bill" placeholder="100" class="inputForm" required>
         </p>
         <label for="service">
           <p>Como foi o seu serviço?</p>
         </label>
-        <select list="service" id="service" name="service" class="inputForm2">
+        <select list="service" id="service" name="service" class="inputForm2" required>
           <option disabled selected>-- Escolha uma opção</option>
           <option value="0.3">30% - Incrivel</option>
           <option value="0.2">20% - Bom</option>
@@ -36,11 +36,17 @@
         <label for="peopleSplit">
           <p>Quantas pessoas vão dividir a conta?</p>
         </label>
-        <p><input type="number" id="peopleSplit" name="peopleSplit" placeholder="0" class="inputForm"> pessoa(s)</p>
+        <p><input type="number" id="peopleSplit" name="peopleSplit" placeholder="0" class="inputForm" required> pessoa(s)</p>
         <button type="submit" class="formSubmit">Calcular!</button>
       </form>
     </div>
+    <div id="totalTip">
+      Gorjeta total:
+      R$:<span id="result">0.00</span>
+      <p id="each">Cada</p>
+    </div>
   </div>
+  <script type="text/javascript" src="./js/scripts.js"></script>
 </body>
 
 </html>
